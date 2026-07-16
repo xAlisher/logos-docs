@@ -1,6 +1,6 @@
 # Table of contents
 
-- [What is Logos](what-is-logos.md)
+- [Introduction to Logos](introduction-to-logos.md)
 - [Logos ecosystem repositories](logos-ecosystem-repositories.md)
 - [Glossary](glossary.md)
 
