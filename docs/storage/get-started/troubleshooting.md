@@ -2,11 +2,15 @@
 title: Troubleshooting
 doc_type: reference
 product: storage
-topics: storage, troubleshooting, connectivity
+topics: 
+    - storage
+    - troubleshooting
+    - connectivity
 authors: arnaud
 owner: logos
 doc_version: 1
 slug: faq
+sidebar_position: 4
 ---
 
 # Troubleshooting

@@ -8,6 +8,7 @@ authors: gmega, kashepavadan, arnaud
 owner: logos
 doc_version: 1
 slug: set-up-and-use-logos-storage-ui
+sidebar_position: 2
 ---
 
 # Set up and use the Logos Storage UI
@@ -85,11 +86,9 @@ The application is built using Nix flakes. The output includes the storage UI pl
      nix run --override-input storage_module/logos-storage git+file:///somewhere/logos-storage-nim?submodules=1
      ```
 
-{% hint style="info" %}
-
-The first build compiles the storage engine and can take a long time; subsequent builds use the Nix cache. To work on the code, `nix develop` opens a shell with all dependencies available.
-
-{% endhint %}
+   :::info
+   The first build compiles the storage engine and can take a long time; subsequent builds use the Nix cache. To work on the code, `nix develop` opens a shell with all dependencies available.
+   :::
 
 #### Build fails with HTTP 500 on BoringSSL fetch
 
@@ -192,11 +191,9 @@ The manifest is the representation of a file on the network: it carries the meta
 
    ![Dashboard after a download, with the download widget reporting Complete](../.gitbook/assets/storage-ui-downloaded.png)
 
-{% hint style="info" %}
-
+:::info
 No CID at hand? Try downloading a public file: fetch `zDvZRwzkzrrYB6sS1rRpRLt4gBhc1pWoyTSjkfszfmj1seaYYLCZ`, the [Farewell to Westphalia book](https://logos.co/farewell-to-westphalia). It is available on the network the default configuration connects to.
-
-{% endhint %}
+:::
 
 ## Step 5: Make your lookups private with Mix
 
